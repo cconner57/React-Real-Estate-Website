@@ -24,37 +24,11 @@
           align-items: center;
 }
 
-.App .search-bar .search-arrow {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  display: block;
-  -webkit-transform: scale(var(--ggs, 1));
-          transform: scale(var(--ggs, 1));
-  width: 22px;
-  height: 22px;
-  border: 2px solid;
-  border-radius: 100px;
-  cursor: pointer;
+.App .search-bar input[type='submit'] {
+  background-image: url("./Arrow.png");
 }
 
-.App .search-bar .search-arrow::after {
-  content: '';
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  left: 5px;
-  top: 6px;
-}
-
-.App .search-bar input[type='search'] {
+.App .search-bar input[type='text'] {
   padding: 5px;
   width: 250px;
   border: 1px solid gray;

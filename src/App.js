@@ -12,7 +12,7 @@ function App() {
 		setProperty({ ...property, loading: true });
 
 		fetch(
-			'http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz17aul58b763_9hc6e'
+			`http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=${process.env.REACT_APP_ZILLOW_ID}&citystatezip=${city}%2C+${state}`
 		)
 			.then(res => res.json())
 			.then(res => setProperty({ properties: res, loading: false }));
